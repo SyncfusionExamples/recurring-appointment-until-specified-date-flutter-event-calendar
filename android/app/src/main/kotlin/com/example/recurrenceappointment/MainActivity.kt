@@ -1,4 +1,4 @@
-package com.example.flutter_app_recurrence
+package com.example.recurrenceappointment
 
 import io.flutter.embedding.android.FlutterActivity
 

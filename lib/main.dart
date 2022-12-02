@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_calendar/calendar.dart';
 
-void main() => runApp(RecurrenceApp());
+void main() => runApp(const RecurrenceApp());
 
 class RecurrenceApp extends StatelessWidget {
+  const RecurrenceApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -29,7 +31,8 @@ class RecurrenceApp extends StatelessWidget {
         subject: 'Meeting',
         color: Colors.pink,
         recurrenceRule:
-            'FREQ=WEEKLY;INTERVAL=1;BYDAY=MO,WED,FRI;UNTIL=20201225'));
+        'FREQ=WEEKLY;INTERVAL=1;BYDAY=MO,WED,FRI;UNTIL=20231225'
+    ));
 
     return _AppointmentDataSource(appointments);
   }
